@@ -93,6 +93,23 @@ body{
   display: inline-flex;
 }
 
+.academy-main-mobile{
+  display: none;
+}
+
+@media only screen and (max-width: 1024px ){
+.academy-main-mobile{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 64px;
+}
+.academy-main{
+  display: none;
+}
+}
+
 /*   Banner    */
 
 .banner{
@@ -136,4 +153,52 @@ body{
 h1{
   color:  #373737;
   opacity: 1;
+}
+
+.banner-mobile{
+  display: none;
+}
+
+/*BANNER MOBILE*/
+@media only screen and (max-width: 768px){
+
+.banner{
+  display: none;
+}
+.banner-mobile{
+  display: flex;
+  flex-direction: column;
+  background-color: #C0B283;
+}
+
+.banner-mobile img{
+  width: 100%;
+  height: auto;
+  /*margin-bottom: 0;*/
+}
+
+.text-mob{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+.text-mob h3{
+  margin-top: .5rem;
+}
+.button-mob{
+  background-color: #373737;
+  color: #F4F4F4;
+  width: 70%;
+  text-align: center;
+  padding: 8px 0;
+  margin-top: .5rem;
+  margin-bottom: 2rem;
+}
+
+.button-mob:hover{
+  background-color: #DCD0C0;
+  color: #373737;
+}
 }
